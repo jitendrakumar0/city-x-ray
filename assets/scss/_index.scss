@@ -286,11 +286,15 @@
             font-size: 16px;
             text-transform: uppercase;
             padding: 8px 18px;
-            box-shadow: 5px 5px 5px #323232;
+            box-shadow: 5px 5px 5px #979797c4;
             text-decoration: none;
             background-color: $theme1;
             color: $white;
             display: inline-flex;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: lighten($theme1, 5);
+            }
         }
     }
 }
@@ -352,6 +356,9 @@
     }
 }
 // cta button sectioin code end here
+
+
+// book home sectioin code start here
 .bookHomeSection {
     & .leftSide {
         background-color: $gray-100;
@@ -362,19 +369,268 @@
             line-height: 30px;
             text-align: center;
         }
+        & .card {
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+            & .bookHomeImage {
+                width: 70px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            & .bookHomeSubHeading {
+                font-size: 14px;
+                margin: 15px 0 10px;
+                line-height: 20px;
+                color: $black;
+            }
+        }
+        & .bookNowBtn {
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: $theme1;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 8px 18px;
+            font-weight: 700;
+            font-size: 15px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 5px 5px 5px #979797c4;
+            &:hover {
+                background-color: lighten($theme1,5);
+            }
+        }
+        & .notSure {
+            font-size: 14px;
+            line-height: 22px;
+            & a {
+                text-decoration: none;
+                color: $primary;
+            }
+        }
     }
     & .rightSide {
-
+        & .needHelpHeading {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 18px;
+            line-height: 29px;
+            color: $black;
+        }
+        & .inpOuter {
+            & .form-control {
+                border: 1px solid $gray-200;
+                border-radius: 0px;
+                width: 100%;
+                height: 45px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                box-shadow: none;
+                color: $black;
+                background-color: $white;
+                &::placeholder {
+                    color: $gray-500;
+                }
+            }
+            & textarea {
+                border: 1px solid $gray-200;
+                font-size: 14px;
+                line-height: 1.42857143;
+                padding: 6px 12px;
+                border-radius: 0px;
+                color: $black;
+                &:focus {
+                    outline: none;
+                }
+                background-color: $white;
+                &::placeholder {
+                    color: $gray-500;
+                }
+            }
+        }
+        & .getCallBtn {
+            width: 100%;
+            border-radius: 5px;
+            background-color: $theme1;
+            color: $white;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            transition: all 0.3s ease-in-out;
+            letter-spacing: 1px;
+            padding: 8px 18px;
+            box-shadow: 5px 5px 5px #979797c4;
+            &:hover {
+                background-color: lighten($theme1, 5);
+            }
+        }
     }
 }
 
-// book home sectioin code start here
 @mixin book-home-mixin-max-xl(){}
-@mixin book-home-mixin-max-lg(){}
-@mixin book-home-mixin-max-md(){}
-@mixin book-home-mixin-max-sm(){}
-@mixin book-home-mixin-max-xs(){}
+@mixin book-home-mixin-max-lg(){
+    .bookHomeSection {
+        & .leftSide {
+            & .sectionHeading {
+            }
+            & .card {
+                & .bookHomeImage {
+                    width: 60px;
+                    height: 60px;
+                }
+                & .bookHomeSubHeading {
+                }
+            }
+            & .bookNowBtn {
+                &:hover {
+                }
+            }
+            & .notSure {
+                & a {
+                }
+            }
+        }
+        & .rightSide {
+            & .needHelpHeading {
+            }
+            & .inpOuter {
+                & .form-control {
+                    &::placeholder {
+                    }
+                }
+                & textarea {
+                    &:focus {
+                    }
+                    &::placeholder {
+                    }
+                }
+            }
+            & .getCallBtn {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+@mixin book-home-mixin-max-md(){
+    .bookHomeSection {
+        & .leftSide {
+            & .sectionHeading {
+                font-size: 22px;
+            }
+            & .card {
+                & .bookHomeImage {
+                    width: 50px;
+                    height: 50px;
+                }
+                & .bookHomeSubHeading {
+                }
+            }
+            & .bookNowBtn {
+                &:hover {
+                }
+            }
+            & .notSure {
+                & a {
+                }
+            }
+        }
+        & .rightSide {
+            & .needHelpHeading {
+            }
+            & .inpOuter {
+                & .form-control {
+                    &::placeholder {
+                    }
+                }
+                & textarea {
+                    &:focus {
+                    }
+                    &::placeholder {
+                    }
+                }
+            }
+            & .getCallBtn {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+@mixin book-home-mixin-max-sm(){
+    .bookHomeSection {
+        & .leftSide {
+            & .sectionHeading {
+                font-size: 20px;
+            }
+            & .card {
+                & .bookHomeImage {
+                    width: 40px;
+                    height: 40px;
+                }
+                & .bookHomeSubHeading {
+                    font-size: 13px;
+                }
+            }
+            & .bookNowBtn {
+                font-size: 14px;
+                padding: 6px 16px;
+                &:hover {
+                }
+            }
+            & .notSure {
+                & a {
+                }
+            }
+        }
+        & .rightSide {
+            & .needHelpHeading {
+            }
+            & .inpOuter {
+                & .form-control {
+                    font-size: 13px;
+                    height: 40px;
+                    &::placeholder {
+                    }
+                }
+                & textarea {
+                    font-size: 13px;
+                    &:focus {
+                    }
+                    &::placeholder {
+                    }
+                }
+            }
+            & .getCallBtn {
+                font-size: 14px;
+                padding: 6px 16px;
+                &:hover {
+                }
+            }
+        }
+    }
+}
+@mixin book-home-mixin-max-xs(){
+}
 // book home sectioin code end here
+
+//Featured sectioin code start here
+
+@mixin featured-section-mixin-max-xl(){}
+@mixin featured-section-mixin-max-lg(){}
+@mixin featured-section-mixin-max-md(){}
+@mixin featured-section-mixin-max-sm(){}
+@mixin featured-section-mixin-max-xs(){}
+
+//Featured sectioin code end here
 
 .homeProductCarouselFluid {
     & .homeProductCarousel {
