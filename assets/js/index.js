@@ -230,6 +230,44 @@ if(document.querySelector('[page-name=productCategoryPage]')) {
 }
 
 
+// Latest News page
+if(document.querySelector('[page-name=latestNews]')) {
+    var swiper = new Swiper(".newsSwiper", {
+      // slidesPerView: 3,
+      // spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      }, 
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      800: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    }
+  });
+}
+
 
 
 
