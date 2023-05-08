@@ -250,7 +250,7 @@
                             // border-radius: 8px;
                             // border: 0px;
                             // padding:4px 12px;;
-                            color: $black;
+                            color: $theme1;
                             font-size: 14px;
                             margin-top: 16px;
                             display: inline-flex;
@@ -271,7 +271,7 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                filter: sepia(1);
+                                // filter: sepia(1);
                                 transition: all .5s;
                             }
                         }
