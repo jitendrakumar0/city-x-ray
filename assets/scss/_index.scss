@@ -887,6 +887,36 @@
         }
     }
 }
+
+@mixin why-choose-section-mixin-max-xl(){}
+@mixin why-choose-section-mixin-max-lg(){}
+@mixin why-choose-section-mixin-max-md(){}
+@mixin why-choose-section-mixin-max-sm(){
+    .whyChooseUsSection {
+        & .sectionHeading {
+            text-align: center;
+            color: $black;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        & .cardOuter {
+            & .card {
+                & .card-body {
+                    & .cardImg {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    & .card-text {
+                        font-size: 13px;
+                    }
+                }
+                &:hover {
+                }
+            }
+        }
+    }
+}
+@mixin why-choose-section-mixin-max-xs(){}
 //Why Choose Us code end here
 
 
