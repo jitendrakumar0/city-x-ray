@@ -22,6 +22,8 @@
 .ctaFluid {
     & .ctaBox {
         background-image: url(./../img/ctaBg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         & .mainHeading {
             font-size: 32px;
             font-weight: 600;
@@ -36,6 +38,10 @@
             text-decoration: none !important;
             font-size: 16px;
             font-weight: 600;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                background-color: darken($theme1, 5);
+            }
         }
     }
 }
