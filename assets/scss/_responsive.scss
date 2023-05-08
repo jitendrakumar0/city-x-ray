@@ -10,7 +10,7 @@
   @include productCategoryPage-mixin-min-sm();
   @include productDetailPage-mixin-min-sm();
   @include homeProductCategoryFluid-mixin-min-sm();
-  @include sectionHeading-mixin-min-sm();
+  @include latestNews-mixin-min-sm();
   // @include heroSection-mixin-min-sm();
   // @include heroSection-mixin-min-sm();
   // @include heroSection-mixin-min-sm();
@@ -31,7 +31,7 @@
   @include productCategoryPage-mixin-min-md();
   @include productDetailPage-mixin-min-md();
   @include homeProductCategoryFluid-mixin-min-md();
-  @include sectionHeading-mixin-min-md();
+  @include latestNews-mixin-min-md();
   // @include heroSection-mixin-min-md();
   // @include heroSection-mixin-min-md();
   // @include heroSection-mixin-min-md();
@@ -51,7 +51,7 @@
   @include productCategoryPage-mixin-min-lg();
   @include productDetailPage-mixin-min-lg();
   @include homeProductCategoryFluid-mixin-min-lg();
-  @include sectionHeading-mixin-min-lg();
+  @include latestNews-mixin-min-lg();
   // @include heroSection-mixin-min-lg();
   // @include heroSection-mixin-min-lg();
   // @include heroSection-mixin-min-lg();
@@ -71,7 +71,7 @@
   @include productCategoryPage-mixin-min-xl();
   @include productDetailPage-mixin-min-xl();
   @include homeProductCategoryFluid-mixin-min-xl();
-  @include sectionHeading-mixin-min-xl();
+  @include latestNews-mixin-min-xl();
   // @include heroSection-mixin-min-xl();
   // @include heroSection-mixin-min-xl();
   // @include heroSection-mixin-min-xl();
@@ -91,7 +91,7 @@
   @include productCategoryPage-mixin-min-xxl();
   @include productDetailPage-mixin-min-xxl();
   @include homeProductCategoryFluid-mixin-min-xxl();
-  @include sectionHeading-mixin-min-xxl();
+  @include latestNews-mixin-min-xxl();
   // @include heroSection-mixin-min-xxl();
   // @include heroSection-mixin-min-xxl();
   // @include heroSection-mixin-min-xxl();
@@ -111,9 +111,10 @@
   @include productCategoryPage-mixin-max-xl();
   @include productDetailPage-mixin-max-xl();
   @include homeProductCategoryFluid-mixin-max-xl();
-  @include sectionHeading-mixin-max-xl();
+  @include latestNews-mixin-max-xl();
   @include cta-button-mixin-max-xl();
   @include book-home-mixin-max-xl();
+  @include featured-section-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
@@ -133,7 +134,7 @@
   @include productCategoryPage-mixin-max-1300();
   @include productDetailPage-mixin-max-1300();
   @include homeProductCategoryFluid-mixin-max-1300();
-  @include sectionHeading-mixin-max-1300();
+  @include latestNews-mixin-max-1300();
   // @include heroSection-mixin-max-1300();
   // @include heroSection-mixin-max-1300();
   // @include heroSection-mixin-max-1300();
@@ -153,9 +154,10 @@
   @include productCategoryPage-mixin-max-lg();
   @include productDetailPage-mixin-max-lg();
   @include homeProductCategoryFluid-mixin-max-lg();
-  @include sectionHeading-mixin-max-lg();
+  @include latestNews-mixin-max-lg();
   @include cta-button-mixin-max-lg();
   @include book-home-mixin-max-lg();
+  @include featured-section-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
@@ -175,9 +177,10 @@
   @include productCategoryPage-mixin-max-md();
   @include productDetailPage-mixin-max-md();
   @include homeProductCategoryFluid-mixin-max-md();
-  @include sectionHeading-mixin-max-md();
+  @include latestNews-mixin-max-md();
   @include cta-button-mixin-max-md();
   @include book-home-mixin-max-md();
+  @include featured-section-mixin-max-md();
   // @include heroSection-mixin-max-md();
   // @include heroSection-mixin-max-md();
   // @include heroSection-mixin-max-md();
@@ -200,9 +203,10 @@
   @include productCategoryPage-mixin-max-sm();
   @include productDetailPage-mixin-max-sm();
   @include homeProductCategoryFluid-mixin-max-sm();
-  @include sectionHeading-mixin-max-sm();
+  @include latestNews-mixin-max-sm();
   @include cta-button-mixin-max-sm();
   @include book-home-mixin-max-sm();
+  @include featured-section-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
@@ -224,9 +228,10 @@
   @include productCategoryPage-mixin-max-xs();
   @include productDetailPage-mixin-max-xs();
   @include homeProductCategoryFluid-mixin-max-xs();
-  @include sectionHeading-mixin-max-xs();
+  @include latestNews-mixin-max-xs();
   @include cta-button-mixin-max-xs();
   @include book-home-mixin-max-xs();
+  @include featured-section-mixin-max-xs();
   // @include heroSection-mixin-max-xs();
   // @include heroSection-mixin-max-xs();
   // @include heroSection-mixin-max-xs();
