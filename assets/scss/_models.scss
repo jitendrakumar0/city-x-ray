@@ -1,1 +1,41 @@
-
+.textSection {
+    & .textMainHeading {
+        font-size: 26px;
+    }
+    & .textMainHeading2 {
+        font-size: 24px;
+    }
+    & .textSubHeading {
+        font-size: 16px;
+        font-weight: 600;
+        & img {
+            height: 13px;
+        }
+    }
+    & .text {
+        font-size: 16px;
+        & img {
+            height: 13px;
+        }
+    }
+}
+.ctaFluid {
+    & .ctaBox {
+        background-image: url(./../img/ctaBg2.jpg);
+        & .mainHeading {
+            font-size: 32px;
+            font-weight: 600;
+        }
+        & .ctaAnchor {
+            display: inline-flex;
+            width: fit-content;
+            border-radius: 5px;
+            padding: 8px 16px;
+            background-color: $theme1;
+            color: $white;
+            text-decoration: none !important;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
