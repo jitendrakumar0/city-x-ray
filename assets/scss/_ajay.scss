@@ -46,6 +46,64 @@
         }
     }
 }
+.mapsection{
+    & .headingloction {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 35px;
+        text-transform: capitalize;
+        margin: 0 0 10px;
+    }
+    & .subheading{
+        font-size: 15px;
+        font-weight: 400;
+
+    }
+    & .map{
+
+    }
+    & .section2{
+        & .form-select{
+        }
+        & .headingform{
+            font-size: 19px;
+            font-weight: 700;
+            color: $black;
+        }
+        & .addresh{
+            font-size: 16px;
+            font-weight: 700;
+            
+        }
+        & .btn1{
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            color: $white;
+            background-color: $theme1;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: lighten($theme1 , 5);
+            }
+
+        }
+        & .btn2{
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            color: $white;
+            background-color: $theme2;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: lighten($theme2 , 5);
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 400px) {
     .healthSection {
