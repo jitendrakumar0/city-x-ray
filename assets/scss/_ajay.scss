@@ -1,0 +1,84 @@
+.healthSection {
+    & .innersection {
+        & .heading {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            text-transform: capitalize;
+            margin: 0 0 10px;
+            position: relative;
+        }
+        & .healthcheck {
+            & .card {
+                transition: all 0.3s ease-in-out;
+                & .userImg {
+                    & img {
+                        transition: all 1s ease-in-out;
+                    }
+                }
+                & .healthEsu{
+                    font-size: 16px;
+                    line-height: normal;
+                    text-transform: capitalize;
+                }
+                &:hover{
+                    & .userImg {
+                        & img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                &::before{
+                    content: '';
+                    width: 50px;
+                    height: 50px;
+                    background: url(../img/brand-logo.png) no-repeat, center;
+                    background-size: contain;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    z-index: 3;
+                }
+                & .btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .healthSection {
+        & .innersection {
+            & .heading {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            & .healthcheck {
+                & .card {
+                    & .userImg {
+                        & img {
+                        }
+                    }
+                    & .healthEsu{
+                        font-size: 14px;
+                    }
+                    &:hover{
+                        & .userImg {
+                            & img {
+                            }
+                        }
+                    }
+                    &::before{
+                        content: '';
+                        width: 40px;
+                        height: 40px;
+                    }
+                    & .btn {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
