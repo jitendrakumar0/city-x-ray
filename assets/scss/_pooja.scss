@@ -3,7 +3,7 @@
     & .newsHeading{
         margin-bottom: 20px;
         & .heading{
-            font-family: 'Gilroy-Bold';
+            
             font-size: 28px;
             line-height: 33px;
             font-weight: bold;
@@ -11,7 +11,7 @@
         }
         & .newsAll{
             & a {
-                font-family: 'Gilroy-Bold';
+                
                 font-size: 18px;
                 line-height: 21px;
                 text-align: right;
@@ -39,7 +39,7 @@
                     & .newsSubtitle {
                         // max-width: 213px;
                         padding-top:10px;
-                        font-family: 'Gilroy-Bold';
+                        
                         font-size: 18px;
                         line-height: 21px;
                         font-weight: bold;
@@ -73,7 +73,7 @@
     & .testimonialHeading {
         margin-bottom: 20px;
         & .heading{
-            font-family: 'Gilroy-Bold';
+            
             font-size: 28px;
             line-height: 33px;
             font-weight: bold;
@@ -139,6 +139,162 @@
     }
 }
 
+.certificate {
+    margin-bottom: 60px;
+    & .certificateHeading {
+        margin-bottom: 20px;
+        & .heading{
+            font-size: 28px;
+            line-height: 33px;
+            font-weight: bold;
+            color: $black;
+        }
+    }
+    & .certificateSwiper {
+        & .certificateSlideBox {
+            & .certificateSlide {
+                & .certificateImg{
+    
+                }
+            }
+        }
+        & .swiper-button-next {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: grayscale(1);
+            &::after {
+                font-size: 20px;
+            }
+        }
+        & .swiper-button-prev {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: grayscale(1);
+            &::after {
+                font-size: 20px;
+            }
+        }
+    }
+    & .awardSwiper {
+
+        & .awardSlideBox{
+            & .awardSlide{
+                & .awardImg {
+
+                }
+            }
+        }
+        & .swiper-button-next {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: grayscale(1);
+            &::after {
+                font-size: 20px;
+            }
+        }
+        & .swiper-button-prev {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: grayscale(1);
+            &::after {
+                font-size: 20px;
+            }
+        }
+    }
+    
+}
+
+.health {
+    margin-bottom: 60px;
+    & .healthHeading {
+        margin-bottom: 20px;
+        & .heading{
+            font-size: 28px;
+            line-height: 33px;
+            font-weight: bold;
+            color: $black;
+        }
+    }
+        & .healthSwiper {
+            padding-bottom: 40px !important;
+            & .healthSlideBox {
+                & .healthSlide {
+                    & .healthImg {
+                        border-radius: 10px;
+                        margin: 10px;
+                        & img {
+                            border-radius: 10px;
+                        }
+                    }
+                    & .healthContent {
+                        padding: 15px 27px 20px 27px;
+                        & .healthpara {
+                            padding-top: 10px;
+                            font-size: 16px;
+                            line-height: 21px;
+                            // font-weight: bold;
+                            color: #1c1c1c;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            cursor: pointer;
+                        }
+                        & .healthButton {
+                            // background-color: $theme1;
+                            // border-radius: 8px;
+                            // border: 0px;
+                            // padding:4px 12px;;
+                            color: $theme1;
+                            font-size: 14px;
+                            margin-top: 16px;
+                            display: inline-flex;
+                            text-decoration: none;
+                            margin: right;
+
+                            &:hover {
+                                & img {
+                                    transform: translateX(10px);
+                                }
+                            }
+
+                            & img {
+                                width: 15px !important;
+                                height: 15px !important;
+                                aspect-ratio: 10/10;
+                                object-fit: contain;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                // filter: sepia(1);
+                                transition: all .5s;
+                            }
+                        }
+                    }
+                }
+            }
+            & .swiper-pagination {
+                bottom: -5px !important;
+                & .swiper-pagination-bullet {
+                    border-radius: 0px !important;
+                    width: 10px;
+                    height: 10px;
+                    &.swiper-pagination-bullet-active {
+                        background: black !important;
+                    }
+                }
+                
+            }
+        }
+}
+
+
+
 @mixin latestNews-mixin-min-sm(){
     .latestNews {
         & .newsHeading{
@@ -171,6 +327,34 @@
                 
             }
         }
+    }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
     }
 };
 @mixin latestNews-mixin-min-md(){
@@ -206,6 +390,34 @@
             }
         }
     }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
+    }
 };
 @mixin latestNews-mixin-min-lg(){
     .latestNews {
@@ -239,6 +451,34 @@
                 
             }
         }
+    }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
     }
 };
 @mixin latestNews-mixin-min-xl(){
@@ -274,6 +514,34 @@
             }
         }
     }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
+    }
 };
 @mixin latestNews-mixin-min-xxl(){
     .latestNews {
@@ -307,6 +575,34 @@
                 
             }
         }
+    }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
     }
 };
 @mixin latestNews-mixin-max-xl(){
@@ -342,6 +638,34 @@
             }
         }
     }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
+    }
 };
 @mixin latestNews-mixin-max-1300(){
     .latestNews {
@@ -376,6 +700,34 @@
             }
         }
     }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
+    }
 };
 @mixin latestNews-mixin-max-lg(){
     .latestNews {
@@ -409,6 +761,34 @@
                 
             }
         }
+    }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
     }
 };
 @mixin latestNews-mixin-max-md(){
@@ -445,6 +825,70 @@
                 
             }
         }
+    }
+    .testimonial {
+        & .testimonialHeading {
+            & .heading{
+                font-size: 22px;
+            }
+        }
+        & .testimonialSwiper {
+            & .testimonialSlideBox {
+                & .testimonialSlide {
+                    & .testimonialImg {
+                        & img {
+                        }
+    
+                    }
+                    & .testimonialContent {
+                        & .testimonialTitle {
+                            
+                        }
+                        & .testimonialsubHeading{
+                        }
+                        & .testimonialPara {
+                        }   
+                    }
+                }
+            }
+            & .swiper-button-next {
+                &::after {
+                }
+            }
+            & .swiper-button-prev {
+                &::after {
+                }
+            }
+        }
+    }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+                font-size: 22px;
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
     }
 };
 @mixin latestNews-mixin-max-sm(){
@@ -486,6 +930,7 @@
     .testimonial {
         & .testimonialHeading {
             & .heading{
+                font-size: 20px;
             }
         }
         & .testimonialSwiper {
@@ -519,6 +964,36 @@
                 }
             }
         }
+    }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+                font-size: 20px;
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
     }
 };
 @mixin latestNews-mixin-max-xs(){
@@ -560,6 +1035,7 @@
     .testimonial {
         & .testimonialHeading {
             & .heading{
+                font-size: 18px;
             }
         }
         & .testimonialSwiper {
@@ -589,5 +1065,34 @@
                 }
             }
         }
+    }
+
+    .health {
+        & .healthHeading {
+            & .heading{
+                font-size: 18px;
+            }
+        }
+            & .healthSwiper {
+                padding-bottom: 40px !important;
+                & .healthSlideBox {
+                    & .healthSlide {
+                        & .healthImg {
+    
+                        }
+                        & .healthContent {
+                            & .healthpara {
+                            }
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                    
+                }
+            }
     }
 };
