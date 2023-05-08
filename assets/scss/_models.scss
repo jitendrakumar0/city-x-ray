@@ -45,3 +45,63 @@
         }
     }
 }
+@media (max-width: 1199px) {
+    .textSection {
+        & .textMainHeading {
+            font-size: 24px;
+        }
+        & .textMainHeading2 {
+            font-size: 22px;
+        }
+        & .textSubHeading {
+            font-size: 15px;
+            & img {
+            }
+        }
+        & .text {
+            font-size: 15px;
+            & img {
+            }
+        }
+    }
+    .ctaFluid {
+        & .ctaBox {
+            & .mainHeading {
+                font-size: 28px;
+            }
+            & .ctaAnchor {
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .textSection {
+        & .textMainHeading {
+            font-size: 22px;
+        }
+        & .textMainHeading2 {
+            font-size: 20px;
+        }
+        & .textSubHeading {
+            font-size: 14px;
+            & img {
+            }
+        }
+        & .text {
+            font-size: 14px;
+            & img {
+            }
+        }
+    }
+    .ctaFluid {
+        & .ctaBox {
+            & .mainHeading {
+                font-size: 24px;
+            }
+            & .ctaAnchor {
+                font-size: 14px;
+            }
+        }
+    }
+}
