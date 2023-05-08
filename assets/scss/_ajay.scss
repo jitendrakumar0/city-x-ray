@@ -1,30 +1,12 @@
 .healthSection {
     & .innersection {
         & .heading {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 400;
-            line-height: 30px;
+            line-height: 25px;
             text-transform: capitalize;
             margin: 0 0 10px;
             position: relative;
-            &::before{
-                content: '';
-                width: 100%;
-                height: 1px;
-                position: absolute;
-                bottom: -10px;
-                left: 0px;
-                background: $gray-300;
-            }
-            &::after{
-                width: 100px;
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: -10px;
-                height: 1px;
-                background-color: $theme1;
-            }
         }
         & .healthcheck {
             & .card {
@@ -35,7 +17,7 @@
                     }
                 }
                 & .healthEsu{
-                    font-size: 18px;
+                    font-size: 16px;
                     line-height: normal;
                     text-transform: capitalize;
                 }
@@ -56,6 +38,45 @@
                     top: 4px;
                     left: 4px;
                     z-index: 3;
+                }
+                & .btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .healthSection {
+        & .innersection {
+            & .heading {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            & .healthcheck {
+                & .card {
+                    & .userImg {
+                        & img {
+                        }
+                    }
+                    & .healthEsu{
+                        font-size: 14px;
+                    }
+                    &:hover{
+                        & .userImg {
+                            & img {
+                            }
+                        }
+                    }
+                    &::before{
+                        content: '';
+                        width: 40px;
+                        height: 40px;
+                    }
+                    & .btn {
+                        font-size: 10px;
+                    }
                 }
             }
         }
