@@ -246,16 +246,34 @@
                             cursor: pointer;
                         }
                         & .healthButton {
-                            background-color: $theme1;
-                            border-radius: 8px;
-                            border: 0px;
-                            padding:4px 12px;;
-                            color: white;
+                            // background-color: $theme1;
+                            // border-radius: 8px;
+                            // border: 0px;
+                            // padding:4px 12px;;
+                            color: $black;
                             font-size: 14px;
                             margin-top: 16px;
                             display: inline-flex;
                             text-decoration: none;
                             margin: right;
+
+                            &:hover {
+                                & img {
+                                    transform: translateX(10px);
+                                }
+                            }
+
+                            & img {
+                                width: 15px !important;
+                                height: 15px !important;
+                                aspect-ratio: 10/10;
+                                object-fit: contain;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                filter: sepia(1);
+                                transition: all .5s;
+                            }
                         }
                     }
                 }
