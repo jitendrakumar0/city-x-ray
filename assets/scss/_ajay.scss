@@ -77,7 +77,7 @@
         }
         & .btn1{
             font-size: 16px;
-            font-weight: 400;
+            font-weight: 700;
             border-radius: 5px;
             text-decoration: none;
             text-align: center;
@@ -91,7 +91,7 @@
         }
         & .btn2{
             font-size: 16px;
-            font-weight: 400;
+            font-weight: 700;
             border-radius: 5px;
             text-decoration: none;
             text-align: center;
@@ -135,6 +135,41 @@
                     & .btn {
                         font-size: 10px;
                     }
+                }
+            }
+        }
+    }
+    .mapsection{
+        & .headingloction {
+            font-size: 20px;
+            line-height: 25px;
+        }
+        & .subheading{
+            font-size: 14px;
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                font-size: 14px;
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                font-size: 14px;
+                &:hover{
                 }
             }
         }
