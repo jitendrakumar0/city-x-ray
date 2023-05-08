@@ -1,0 +1,63 @@
+.healthSection {
+    & .innersection {
+        & .heading {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+            text-transform: capitalize;
+            margin: 0 0 10px;
+            position: relative;
+            &::before{
+                content: '';
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                bottom: -10px;
+                left: 0px;
+                background: $gray-300;
+            }
+            &::after{
+                width: 100px;
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                height: 1px;
+                background-color: $theme1;
+            }
+        }
+        & .healthcheck {
+            & .card {
+                transition: all 0.3s ease-in-out;
+                & .userImg {
+                    & img {
+                        transition: all 1s ease-in-out;
+                    }
+                }
+                & .healthEsu{
+                    font-size: 18px;
+                    line-height: normal;
+                    text-transform: capitalize;
+                }
+                &:hover{
+                    & .userImg {
+                        & img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                &::before{
+                    content: '';
+                    width: 50px;
+                    height: 50px;
+                    background: url(../img/brand-logo.png) no-repeat, center;
+                    background-size: contain;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    z-index: 3;
+                }
+            }
+        }
+    }
+}
