@@ -231,7 +231,119 @@ if(document.querySelector('[page-name=productCategoryPage]')) {
 
 
 // Latest News page
-if(document.querySelector('[page-name=latestNews]')) {
+  if(document.querySelector('[page-name=latestNews]')) {
+    var swiper = new Swiper(".certificateSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        }, 
+        576: {
+          slidesPerView: 2,
+          // spaceBetween: 20,
+        },
+        800: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1400: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+      }
+  });
+
+  var swiper = new Swiper(".awardSwiper", {
+    // slidesPerView: 3,
+    // spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    }, 
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1400: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  }
+});
+
+var swiper = new Swiper(".healthSwiper", {
+  // slidesPerView: 1,
+  // spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    }, 
+    576: {
+      slidesPerView: 2,
+      // spaceBetween: 20,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1400: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  }
+});
 }
 
 
