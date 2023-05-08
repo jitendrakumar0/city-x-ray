@@ -625,6 +625,12 @@
 //Featured sectioin code start here
 
 .featuredSerSection {
+    & .SectionHeading {
+        color: $black;
+        font-size: 28px;
+        line-height: 33px;
+        font-weight: bold;
+    }
     & .featureSwiper {
         & .featureSlideBox {
             & .featureSlide {
@@ -714,9 +720,52 @@
 
 @mixin featured-section-mixin-max-xl(){}
 @mixin featured-section-mixin-max-lg(){}
-@mixin featured-section-mixin-max-md(){}
+@mixin featured-section-mixin-max-md(){
+    .featuredSerSection {
+        & .SectionHeading {
+            color: $black;
+            font-size: 22px;
+        }
+        & .featureSwiper {
+            & .featureSlideBox {
+                & .featureSlide {
+                    & .card {
+                        & .card-body {
+                            & .imgOuter {
+                            }
+                            & .cardHeading {
+                            }
+                            & .cardSubHeadings {
+                                & ul {
+                                    & li {
+                                        &::before {
+                                        }
+                                    }
+                                }
+                            }
+                            & .readMoreBtn {
+                                &:hover {
+                                }
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .swiper-pagination  {
+                & .swiper-pagination-bullet-active {
+                }
+            }
+        }
+    }
+}
 @mixin featured-section-mixin-max-sm(){
     .featuredSerSection {
+        & .SectionHeading {
+            color: $black;
+            font-size: 20px;
+        }
         & .featureSwiper {
             & .featureSlideBox {
                 & .featureSlide {
@@ -759,9 +808,85 @@
         }
     }
 }
-@mixin featured-section-mixin-max-xs(){}
+@mixin featured-section-mixin-max-xs(){
+    .featuredSerSection {
+        & .SectionHeading {
+            color: $black;
+            font-size: 18x;
+        }
+        & .featureSwiper {
+            & .featureSlideBox {
+                & .featureSlide {
+                    & .card {
+                        & .card-body {
+                            & .imgOuter {
+                            }
+                            & .cardHeading {
+                            }
+                            & .cardSubHeadings {
+                                flex: 1 1 auto;
+                                & ul {
+                                    & li {
+                                        &::before {
+                                        }
+                                    }
+                                }
+                            }
+                            & .readMoreBtn {
+                                &:hover {
+                                }
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .swiper-pagination  {
+                & .swiper-pagination-bullet-active {
+                }
+            }
+        }
+    }
+}
 
 //Featured sectioin code end here
+
+
+//Why Choose Us code start here
+.whyChooseUsSection {
+    & .sectionHeading {
+        text-align: center;
+        color: $black;
+        font-weight: bold;
+        font-size: 28px;
+    }
+    & .cardOuter {
+        & .card {
+            height: 100%;
+            & .card-body {
+                & .cardImg {
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 15px !important;
+                    margin: auto;
+                }
+                & .card-text {
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: $black;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+//Why Choose Us code end here
+
+
 
 .homeProductCarouselFluid {
     & .homeProductCarousel {
