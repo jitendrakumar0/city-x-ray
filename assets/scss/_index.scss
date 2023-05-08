@@ -864,6 +864,7 @@
     & .cardOuter {
         & .card {
             height: 100%;
+            transition: all 0.3s ease-in-out;
             & .card-body {
                 & .cardImg {
                     width: 45px;
@@ -882,9 +883,10 @@
                 }
             }
             &:hover {
-                box-shadow: 0px 0px 0px ;
+                box-shadow: 1px 1px 8px #979797c4;
             }
         }
+
     }
 }
 
