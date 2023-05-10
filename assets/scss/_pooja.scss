@@ -1,5 +1,5 @@
 .latestNews {
-    margin: 60px 0px;
+    // margin: 60px 0px;
     & .newsHeading{
         
         & .heading{
@@ -295,9 +295,25 @@
             font-size: 28px;
             line-height: 33px;
             font-weight: 500;
-            width: 100%;
-            text-align: center;
             color: $black;
+        }
+        
+        & .btaBtn {
+            font-family: sans-serif;
+            font-weight: 700;
+            border-radius: 5px;
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 8px 26px;
+            box-shadow: 5px 5px 5px #979797c4;
+            text-decoration: none;
+            background-color: $theme1;
+            color: $white;
+            display: inline-flex;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: lighten($theme1, 5);
+            }
         }
     }
         & .healthSwiper {
@@ -322,7 +338,7 @@
                         }
                     }
                     & .healthContent {
-                        padding: 15px;
+                        padding: 20px 0px;
                         & .healthListDate {
                             color: $gray-500;
                             font-size: 14px;
@@ -425,23 +441,6 @@
                             text-transform: capitalize;
                         }
                     }
-                }
-            }
-            & .btaBtn {
-                font-family: sans-serif;
-                font-weight: 700;
-                border-radius: 5px;
-                font-size: 16px;
-                text-transform: uppercase;
-                padding: 8px 26px;
-                box-shadow: 5px 5px 5px #979797c4;
-                text-decoration: none;
-                background-color: $theme1;
-                color: $white;
-                display: inline-flex;
-                transition: all 0.3s ease-in-out;
-                &:hover {
-                    background-color: lighten($theme1, 5);
                 }
             }
         }
@@ -1812,6 +1811,12 @@
             & .healthSwiper {
                 padding-bottom: 40px !important;
                 & .healthSlideBox {
+                    
+                    & .mobileFlow {
+                        flex-wrap: nowrap;
+                        overflow: auto hidden;
+                        justify-content: start !important;
+                    }
                     & .healthSlide {
                         & .healthImg {
     
