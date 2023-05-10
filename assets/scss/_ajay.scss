@@ -190,3 +190,392 @@
         }
     }
 }
+
+@mixin mapLocation-mixin-min-sm(){
+    .mapsection{
+        & .headingloction {
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
+@mixin mapLocation-mixin-min-md(){
+    .mapsection{
+        & .headingloction {
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
+@mixin mapLocation-mixin-min-lg(){
+    .mapsection{
+        & .headingloction {
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
+@mixin mapLocation-mixin-min-xl(){
+    .mapsection{
+        & .headingloction {
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
+@mixin mapLocation-mixin-min-xxl(){
+    .mapsection{
+        & .headingloction {
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
+@mixin mapLocation-mixin-max-xl(){
+    .mapsection{
+        & .headingloction {
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
+@mixin mapLocation-mixin-max-1300(){
+    .mapsection{
+        & .headingloction {
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
+@mixin mapLocation-mixin-max-lg(){
+    .mapsection{
+        & .headingloction {
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
+@mixin mapLocation-mixin-max-md(){
+    .mapsection{
+        & .headingloction {
+            font-size: 22px;
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
+@mixin mapLocation-mixin-max-sm(){
+    .mapsection{
+        & .headingloction {
+            font-size: 20px;
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
+@mixin mapLocation-mixin-max-xs(){
+    .mapsection{
+        & .headingloction {
+            // font-size: 18px;
+        }
+        & .subheading{
+            
+    
+        }
+        & .map{
+    
+        }
+        & .section2{
+            & .form-select{
+            }
+            & .headingform{
+                font-size: 16px;
+            }
+            & .addresh{
+                font-size: 14x;
+                
+            }
+            & .btn1{
+                
+                &:hover{
+                }
+    
+            }
+            & .btn2{
+                
+                &:hover{
+                }
+            }
+        }
+    }
+};
