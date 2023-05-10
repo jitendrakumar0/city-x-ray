@@ -320,27 +320,27 @@ var swiper = new Swiper(".healthSwiper", {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 15,
     }, 
     576: {
       slidesPerView: 2,
-      // spaceBetween: 20,
+      spaceBetween: 15,
     },
     800: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 15,
     },
     992: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 15,
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 15,
     },
     1400: {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 15,
     },
   }
 });
