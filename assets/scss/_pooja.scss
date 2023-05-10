@@ -9,7 +9,7 @@
             font-weight: 500;
             text-align: center;
             width: 100%;
-            color: #1C1C1C;
+            color: $black;
         }
         & .newsAll{
             & a {
@@ -61,7 +61,7 @@
                         font-size: 14px;
                         line-height: 21px;
                         // font-weight: bold;
-                        color: #1C1C1C;
+                        color: $black;
                         display: -webkit-box;
                         -webkit-line-clamp: 2;
                         -webkit-box-orient: vertical;
@@ -97,7 +97,7 @@
             font-weight: 500;
             text-align: center;
             width: 100%;
-            color: #1C1C1C;
+            color: $black;
         }
     }
     & .testimonialSwiper {
@@ -316,9 +316,9 @@
                     border-radius: 8px;
                     & .healthImg {
                         border-radius: 8px;
-                        margin: 15px;
+                        // margin: 15px;
                         transition: all .5s;
-                        
+                        overflow: hidden;
                         & img {
                             transition: all .5s;
                             border-radius: 8px;
@@ -331,7 +331,7 @@
                             font-size: 16px;
                             line-height: 21px;
                             // font-weight: bold;
-                            color: #1c1c1c;
+                            color: $black;
                             display: -webkit-box;
                             -webkit-line-clamp: 2;
                             -webkit-box-orient: vertical;
@@ -376,17 +376,53 @@
                     }
                 }
             }
-            & .swiper-pagination {
-                bottom: -5px !important;
-                & .swiper-pagination-bullet {
-                    border-radius: 0px !important;
-                    width: 10px;
-                    height: 10px;
-                    &.swiper-pagination-bullet-active {
-                        background: $theme1 !important;
+            & .healthList {
+                & .healthItem {
+                    & .healthItemList {
+                        list-style: none;
+                        padding: 10px 20px 20px;
+                        border-bottom: 1px solid $gray-400;
+
+                        &:last-child {
+                            border-bottom: 0px !important;
+                        }
+                        & .healthListDate {
+                            color: $gray-500;
+                            font-size: 14px;
+                            font-weight: normal;
+                            & img {
+                                width: 10px;
+                                height: 10px;
+                                object-fit: contain;
+                                aspect-ratio: 10/10;
+                            }
+                        }
+                        & .healthListHeading {
+                            text-decoration: none;
+                            color: $theme1;
+                            font-size: 22px;
+                            font-weight: 500;
+                            text-transform: capitalize;
+                        }
                     }
                 }
-                
+            }
+            & .btaBtn {
+                font-family: sans-serif;
+                font-weight: 700;
+                border-radius: 5px;
+                font-size: 16px;
+                text-transform: uppercase;
+                padding: 8px 26px;
+                box-shadow: 5px 5px 5px #979797c4;
+                text-decoration: none;
+                background-color: $theme1;
+                color: $white;
+                display: inline-flex;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background-color: lighten($theme1, 5);
+                }
             }
         }
 }
@@ -445,12 +481,24 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .he
+                    & .btaBtn {
+                        &:hover {
+                        }
+                    }althList {
+                    & .healthItem {
+                        & .healthItemList {
+    
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                            }
                         }
                     }
-                    
                 }
             }
     }
@@ -550,12 +598,24 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .healthList {
+                    & .healthItem {
+                        & .healthItemList {
+    
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                            }
+                        }
+                    }    
+                    & .btaBtn {
+                        &:hover {
                         }
                     }
-                    
                 }
             }
     }
@@ -655,12 +715,24 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .healthList {
+                    & .healthItem {
+                        & .healthItemList {
+    
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                            }
+                        }
+                    }    
+                    & .btaBtn {
+                        &:hover {
                         }
                     }
-                    
                 }
             }
     }
@@ -760,12 +832,24 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .healthList {
+                    & .healthItem {
+                        & .healthItemList {
+    
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                            }
+                        }
+                    }    
+                    & .btaBtn {
+                        &:hover {
                         }
                     }
-                    
                 }
             }
     }
@@ -866,12 +950,24 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .he
+                    & .btaBtn {
+                        &:hover {
+                        }
+                    }althList {
+                    & .healthItem {
+                        & .healthItemList {
+    
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                            }
                         }
                     }
-                    
                 }
             }
     }
@@ -971,12 +1067,25 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .he
+                    & .btaBtn {
+                        &:hover {
+                        }
+                    }althList {
+                    & .healthItem {
+                        & .healthItemList {
+    
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                                font-size: 18px;
+                            }
                         }
                     }
-                    
                 }
             }
     }
@@ -1076,12 +1185,24 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .healthList {
+                    & .healthItem {
+                        & .healthItemList {
+    
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                            }
+                        }
+                    }    
+                    & .btaBtn {
+                        &:hover {
                         }
                     }
-                    
                 }
             }
     }
@@ -1181,12 +1302,25 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .healthList {
+                    & .healthItem {
+                        & .healthItemList {
+    
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                                font-size: 18px;
+                            }
+                        }
+                    }    
+                    & .btaBtn {
+                        &:hover {
                         }
                     }
-                    
                 }
             }
     }
@@ -1324,12 +1458,29 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .healthList {
+                    & .healthItem {
+                        & .healthItemList {
+                            padding:10px;
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                font-size: 12px;
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                                font-size: 16px;
+                            }
+                        }
+                    }    
+                    & .btaBtn {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        padding: 6px 18px;
+                        &:hover {
                         }
                     }
-                    
                 }
             }
     }
@@ -1473,12 +1624,24 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .healthList {
+                    & .healthItem {
+                        & .healthItemList {
+    
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                            }
+                        }
+                    }    
+                    & .btaBtn {
+                        &:hover {
                         }
                     }
-                    
                 }
             }
     }
@@ -1617,12 +1780,24 @@
                         }
                     }
                 }
-                & .swiper-pagination {
-                    & .swiper-pagination-bullet {
-                        &.swiper-pagination-bullet-active {
+                & .healthList {
+                    & .healthItem {
+                        & .healthItemList {
+    
+                            &:last-child {
+                            }
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthListHeading {
+                            }
+                        }
+                    }    
+                    & .btaBtn {
+                        &:hover {
                         }
                     }
-                    
                 }
             }
     }
