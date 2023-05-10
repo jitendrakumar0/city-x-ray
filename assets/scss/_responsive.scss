@@ -114,6 +114,8 @@
   @include latestNews-mixin-max-xl();
   @include cta-button-mixin-max-xl();
   @include book-home-mixin-max-xl();
+  @include featured-section-mixin-max-xl();
+  @include why-choose-section-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
@@ -156,6 +158,8 @@
   @include latestNews-mixin-max-lg();
   @include cta-button-mixin-max-lg();
   @include book-home-mixin-max-lg();
+  @include featured-section-mixin-max-lg();
+  @include why-choose-section-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
@@ -178,6 +182,8 @@
   @include latestNews-mixin-max-md();
   @include cta-button-mixin-max-md();
   @include book-home-mixin-max-md();
+  @include featured-section-mixin-max-md();
+  @include why-choose-section-mixin-max-md();
   // @include heroSection-mixin-max-md();
   // @include heroSection-mixin-max-md();
   // @include heroSection-mixin-max-md();
@@ -203,6 +209,8 @@
   @include latestNews-mixin-max-sm();
   @include cta-button-mixin-max-sm();
   @include book-home-mixin-max-sm();
+  @include featured-section-mixin-max-sm();
+  @include why-choose-section-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
@@ -227,6 +235,8 @@
   @include latestNews-mixin-max-xs();
   @include cta-button-mixin-max-xs();
   @include book-home-mixin-max-xs();
+  @include featured-section-mixin-max-xs();
+  @include why-choose-section-mixin-max-xs();
   // @include heroSection-mixin-max-xs();
   // @include heroSection-mixin-max-xs();
   // @include heroSection-mixin-max-xs();

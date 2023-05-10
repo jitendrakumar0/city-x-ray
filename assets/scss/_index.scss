@@ -624,13 +624,304 @@
 
 //Featured sectioin code start here
 
+.featuredSerSection {
+    & .SectionHeading {
+        color: $black;
+        font-size: 28px;
+        line-height: 33px;
+        font-weight: bold;
+    }
+    & .featureSwiper {
+        & .featureSlideBox {
+            & .featureSlide {
+                padding-top: 20px;
+                & .card {
+                    height: 100%;
+                    border: 1px solid $gray-100;
+                    border-top: 4px solid $theme1;
+                    transition: all 0.3s ease-in-out;
+                    & .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        & .imgOuter {
+                            margin: auto;
+                            width: 95px;
+                            height: 95px;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 15px !important;
+                        }
+                        & .cardHeading {
+                            font-size: 18px;
+                            padding-bottom: 7px;
+                            margin: 0 0px 6px;
+                            text-align: center;
+                            font-weight: 500;
+                            color: $theme1;
+                        }
+                        & .cardSubHeadings {
+                            flex: 1 1 auto;
+                            & ul {
+                                padding-left: 25px;
+                                & li {
+                                    font-size: 14px;
+                                    padding: 3px 0;
+                                    color: $black;
+                                    list-style: none;
+                                    position: relative;
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        left: -25px;
+                                        top: 3px;
+                                        background: url('../img/svg/right-3-svgrepo-com.svg');
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        width: 24px;
+                                        height: 24px;
+                                        background-size: 24px;
+                                    }
+                                }
+                            }
+                        }
+                        & .readMoreBtn {
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-decoration: none;
+                            width: 100%;
+                            font-size: 16px;
+                            font-weight: 900;
+                            color: $white;
+                            background-color: $theme1;
+                            border-radius: 5px;
+                            padding: 8px 16px;
+                            transition:  all 0.3s ease-in-out;
+                            box-shadow: 5px 5px 5px #979797c4;
+
+                            &:hover {
+                                background-color: lighten($theme1,5);
+                            }
+                        }
+                    }
+                    &:hover {
+                        transform: translateY(-10px);
+                    }
+                }
+            }
+        }
+        & .swiper-pagination  {
+            & .swiper-pagination-bullet-active {
+                background-color: $theme1;
+            }
+        }
+    }
+}
+
 @mixin featured-section-mixin-max-xl(){}
 @mixin featured-section-mixin-max-lg(){}
-@mixin featured-section-mixin-max-md(){}
-@mixin featured-section-mixin-max-sm(){}
-@mixin featured-section-mixin-max-xs(){}
+@mixin featured-section-mixin-max-md(){
+    .featuredSerSection {
+        & .SectionHeading {
+            color: $black;
+            font-size: 22px;
+        }
+        & .featureSwiper {
+            & .featureSlideBox {
+                & .featureSlide {
+                    & .card {
+                        & .card-body {
+                            & .imgOuter {
+                            }
+                            & .cardHeading {
+                            }
+                            & .cardSubHeadings {
+                                & ul {
+                                    & li {
+                                        &::before {
+                                        }
+                                    }
+                                }
+                            }
+                            & .readMoreBtn {
+                                &:hover {
+                                }
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .swiper-pagination  {
+                & .swiper-pagination-bullet-active {
+                }
+            }
+        }
+    }
+}
+@mixin featured-section-mixin-max-sm(){
+    .featuredSerSection {
+        & .SectionHeading {
+            color: $black;
+            font-size: 20px;
+        }
+        & .featureSwiper {
+            & .featureSlideBox {
+                & .featureSlide {
+                    padding-top: 20px;
+                    & .card {
+                        & .card-body {
+                            & .imgOuter {
+                                width: 65px;
+                                height: 65px;
+                            }
+                            & .cardHeading {
+                                font-size: 17px;
+                            }
+                            & .cardSubHeadings {
+                                flex: 1 1 auto;
+                                & ul {
+                                    & li {
+                                        font-size: 13px;
+                                        &::before {
+                                        }
+                                    }
+                                }
+                            }
+                            & .readMoreBtn {
+                                font-size: 14px;
+                                padding: 8px 16px;
+                                &:hover {
+                                }
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .swiper-pagination  {
+                & .swiper-pagination-bullet-active {
+                }
+            }
+        }
+    }
+}
+@mixin featured-section-mixin-max-xs(){
+    .featuredSerSection {
+        & .SectionHeading {
+            color: $black;
+            font-size: 18x;
+        }
+        & .featureSwiper {
+            & .featureSlideBox {
+                & .featureSlide {
+                    & .card {
+                        & .card-body {
+                            & .imgOuter {
+                            }
+                            & .cardHeading {
+                            }
+                            & .cardSubHeadings {
+                                flex: 1 1 auto;
+                                & ul {
+                                    & li {
+                                        &::before {
+                                        }
+                                    }
+                                }
+                            }
+                            & .readMoreBtn {
+                                &:hover {
+                                }
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .swiper-pagination  {
+                & .swiper-pagination-bullet-active {
+                }
+            }
+        }
+    }
+}
 
 //Featured sectioin code end here
+
+
+//Why Choose Us code start here
+.whyChooseUsSection {
+    & .sectionHeading {
+        text-align: center;
+        color: $black;
+        font-weight: bold;
+        font-size: 28px;
+    }
+    & .cardOuter {
+        & .card {
+            height: 100%;
+            transition: all 0.3s ease-in-out;
+            & .card-body {
+                & .cardImg {
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 15px !important;
+                    margin: auto;
+                }
+                & .card-text {
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: $black;
+                    text-align: center;
+                }
+            }
+            &:hover {
+                box-shadow: 1px 1px 8px #979797c4;
+            }
+        }
+
+    }
+}
+
+@mixin why-choose-section-mixin-max-xl(){}
+@mixin why-choose-section-mixin-max-lg(){}
+@mixin why-choose-section-mixin-max-md(){}
+@mixin why-choose-section-mixin-max-sm(){
+    .whyChooseUsSection {
+        & .sectionHeading {
+            text-align: center;
+            color: $black;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        & .cardOuter {
+            & .card {
+                & .card-body {
+                    & .cardImg {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    & .card-text {
+                        font-size: 13px;
+                    }
+                }
+                &:hover {
+                }
+            }
+        }
+    }
+}
+@mixin why-choose-section-mixin-max-xs(){}
+//Why Choose Us code end here
+
+
 
 .homeProductCarouselFluid {
     & .homeProductCarousel {

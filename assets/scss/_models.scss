@@ -1,1 +1,107 @@
-
+.textSection {
+    & .textMainHeading {
+        font-size: 26px;
+    }
+    & .textMainHeading2 {
+        font-size: 24px;
+    }
+    & .textSubHeading {
+        font-size: 16px;
+        font-weight: 600;
+        & img {
+            height: 13px;
+        }
+    }
+    & .text {
+        font-size: 16px;
+        & img {
+            height: 13px;
+        }
+    }
+}
+.ctaFluid {
+    & .ctaBox {
+        background-image: url(./../img/ctaBg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        & .mainHeading {
+            font-size: 32px;
+            font-weight: 600;
+        }
+        & .ctaAnchor {
+            display: inline-flex;
+            width: fit-content;
+            border-radius: 5px;
+            padding: 8px 16px;
+            background-color: $theme1;
+            color: $white;
+            text-decoration: none !important;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                background-color: darken($theme1, 5);
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .textSection {
+        & .textMainHeading {
+            font-size: 24px;
+        }
+        & .textMainHeading2 {
+            font-size: 22px;
+        }
+        & .textSubHeading {
+            font-size: 15px;
+            & img {
+            }
+        }
+        & .text {
+            font-size: 15px;
+            & img {
+            }
+        }
+    }
+    .ctaFluid {
+        & .ctaBox {
+            & .mainHeading {
+                font-size: 28px;
+            }
+            & .ctaAnchor {
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .textSection {
+        & .textMainHeading {
+            font-size: 22px;
+        }
+        & .textMainHeading2 {
+            font-size: 20px;
+        }
+        & .textSubHeading {
+            font-size: 14px;
+            & img {
+            }
+        }
+        & .text {
+            font-size: 14px;
+            & img {
+            }
+        }
+    }
+    .ctaFluid {
+        & .ctaBox {
+            & .mainHeading {
+                font-size: 24px;
+            }
+            & .ctaAnchor {
+                font-size: 14px;
+            }
+        }
+    }
+}
