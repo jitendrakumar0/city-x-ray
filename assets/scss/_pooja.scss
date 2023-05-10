@@ -315,20 +315,40 @@
                     }
                     border-radius: 8px;
                     & .healthImg {
-                        border-radius: 8px;
-                        // margin: 15px;
                         transition: all .5s;
                         overflow: hidden;
                         & img {
                             transition: all .5s;
-                            border-radius: 8px;
                         }
                     }
                     & .healthContent {
-                        padding: 15px 27px 20px 27px;
+                        padding: 15px;
+                        & .healthListDate {
+                            color: $gray-500;
+                            font-size: 14px;
+                            font-weight: normal;
+                            & img {
+                                width: 15px;
+                                height: 15px;
+                                object-fit: contain;
+                                aspect-ratio: 10/10;
+                            }
+                        }
+                        & .healthBlogHeading {
+                            font-size: 20px;
+                            font-weight: 500;
+                            text-transform: capitalize;
+                            color: $theme1;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            cursor: pointer;
+                            margin: 10px 0px;
+                        }
                         & .healthpara {
-                            padding-top: 10px;
-                            font-size: 16px;
+                            font-size: 14px;
                             line-height: 21px;
                             // font-weight: bold;
                             color: $black;
@@ -350,7 +370,7 @@
                             // padding:4px 12px;;
                             color: $theme1;
                             font-size: 14px;
-                            margin-top: 16px;
+                            margin-top: 10px;
                             display: inline-flex;
                             text-decoration: none;
                             margin: right;
@@ -380,7 +400,7 @@
                 & .healthItem {
                     & .healthItemList {
                         list-style: none;
-                        padding: 10px 20px 20px;
+                        padding: 20px;
                         border-bottom: 1px solid $gray-400;
 
                         &:last-child {
@@ -391,8 +411,8 @@
                             font-size: 14px;
                             font-weight: normal;
                             & img {
-                                width: 10px;
-                                height: 10px;
+                                width: 15px;
+                                height: 15px;
                                 object-fit: contain;
                                 aspect-ratio: 10/10;
                             }
@@ -1297,6 +1317,12 @@
     
                         }
                         & .healthContent {
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthBlogHeading {
+                            }
                             & .healthpara {
                             }
                         }
@@ -1453,6 +1479,14 @@
     
                         }
                         & .healthContent {
+                            
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthBlogHeading {
+                                font-size: 18px;
+                            }
                             & .healthpara {
                             }
                         }
@@ -1461,7 +1495,6 @@
                 & .healthList {
                     & .healthItem {
                         & .healthItemList {
-                            padding:10px;
                             &:last-child {
                             }
                             & .healthListDate {
@@ -1618,6 +1651,15 @@
     
                         }
                         & .healthContent {
+                            
+                            & .healthListDate {
+                                font-size: 12px;
+                                & img {
+                                }
+                            }
+                            & .healthBlogHeading {
+                                
+                            }
                             & .healthpara {
                                 font-size: 14px;
                             }
@@ -1775,6 +1817,13 @@
     
                         }
                         & .healthContent {
+                            
+                            & .healthListDate {
+                                & img {
+                                }
+                            }
+                            & .healthBlogHeading {
+                            }
                             & .healthpara {
                             }
                         }
