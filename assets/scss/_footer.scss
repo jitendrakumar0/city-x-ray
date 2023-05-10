@@ -1,5 +1,11 @@
 footer {
-    --bs-bg-opacity: 0.1 !important;
+    // --bs-bg-opacity: 0.1 !important;
+    &.webFooter {
+        background-color: darken($theme1, 15);
+        & .webFooterInner {
+            border-bottom: 1px solid $white;
+        }
+    }
     & .footerLogo {
         height: 50px;
         margin-bottom: 4px;
@@ -12,7 +18,7 @@ footer {
     }
     & .footerHeading {
         font-size: 16px;
-        color: $gray-900;
+        color: $white;
         opacity: 0.9;
         font-weight: 500;
         margin-bottom: 8px;
@@ -21,7 +27,7 @@ footer {
     & .footerLink {
         & .footerAnchor {
             font-size: 14px;
-            color: $gray-900;
+            color: $white;
             text-decoration: none;
             font-weight: 400;
             opacity: 0.9;
@@ -77,23 +83,23 @@ footer {
             }
         }
     }
-}
-.bottomFooter {
-    & .footerDesc {
-        color: $gray-900;
-        font-size: 14px;
-        opacity: 0.9;
-    }
-    & .socialOuter {
-        & .socialIcon {
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            overflow: hidden;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
+    & .bottomFooter {
+        & .footerDesc {
+            color: $white;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        & .socialOuter {
+            & .socialIcon {
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+            }
         }
     }
 }
