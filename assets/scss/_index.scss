@@ -1344,7 +1344,13 @@
 
     }
 }
-
+.healthHeading {
+    font-size: 28px;
+    font-weight: 500;
+    color: $white;
+    text-align: center;
+    line-height: normal;
+}
 @mixin why-choose-section-mixin-max-xl(){}
 @mixin why-choose-section-mixin-max-lg(){}
 @mixin why-choose-section-mixin-max-md(){
@@ -1364,6 +1370,9 @@
                 }
             }
         }
+    }
+    .healthHeading {
+        font-size: 22px;
     }
 }
 @mixin why-choose-section-mixin-max-sm(){
@@ -1394,6 +1403,9 @@
                 }
             }
         }
+    }
+    .healthHeading {
+        font-size: 22px;
     }
 }
 @mixin why-choose-section-mixin-max-xs(){
