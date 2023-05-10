@@ -77,7 +77,14 @@
             font-weight: 700;
             
             & .mapIcon {
-                
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                padding: 10px;
+                & img {
+                    aspect-ratio: 10/10;
+                    object-fit: contain;
+                }
             }
         }
         & .btn1{
