@@ -2,9 +2,10 @@
 .heroSection {
     & .heroSlideBox {
         & .heroSlide {
-            // background-size: cover;
-            background-size: 100% 100%;
+            background-size: cover;
+            // background-size: 100% 100%;
             background-repeat: no-repeat;
+            background-position: top center;
             & .heroproShoes {
                 transform: rotate(-30deg);
             }
@@ -39,6 +40,99 @@
                     }
 
                 }
+            }
+        }
+    }
+    & .heroCtaButtonSection {
+        background: rgb(255,255,255);
+        background: linear-gradient(273deg, rgba(255,255,255,0) 56%, rgba(20,70,123,1) 100%);
+        & .ctaBox {
+            padding: 40px 10px;
+            border-radius: 12px;
+            & .ctaheading {
+                font-weight: 600;
+                font-size: 34px;
+                color: $white;
+                line-height: normal;
+            }
+            & .ctaSubheading {
+                font-weight: 400;
+                font-size: 18px;
+                color: $white;
+            }
+            & .btaBtn {
+                font-weight: 900;
+                border-radius: 5px;
+                font-size: 16px;
+                text-transform: capitalize;
+                padding: 8px 26px;
+                box-shadow: 5px 5px 5px #979797c4;
+                text-decoration: none;
+                background-color: $white;
+                color: $theme1;
+                display: inline-flex;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background-color: darken($white, 5);
+                    color: lighten($theme1, 5);
+                }
+            }
+        }
+    }
+    & .rightSide {
+        & .needHelpHeading {
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 29px;
+            color: $theme1;
+        }
+        & .inpOuter {
+            & .form-control {
+                border: 1px solid $gray-200;
+                border-radius: 0px;
+                width: 100%;
+                height: 45px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                box-shadow: none;
+                color: $black;
+                background-color: $white;
+                &::placeholder {
+                    color: $gray-500;
+                }
+            }
+            & textarea {
+                border: 1px solid $gray-200;
+                font-size: 14px;
+                line-height: 1.42857143;
+                padding: 6px 12px;
+                border-radius: 0px;
+                color: $black;
+                &:focus {
+                    outline: none;
+                }
+                background-color: $white;
+                &::placeholder {
+                    color: $gray-500;
+                }
+            }
+        }
+        & .getCallBtn {
+            width: 100%;
+            border-radius: 5px;
+            background-color: $theme1;
+            color: $white;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            transition: all 0.3s ease-in-out;
+            letter-spacing: 1px;
+            padding: 8px 18px;
+            box-shadow: 5px 5px 5px #979797c4;
+            &:hover {
+                background-color: lighten($theme1, 5);
             }
         }
     }
@@ -189,55 +283,134 @@
 };
 @mixin heroSection-mixin-max-md(){
     .heroSection {
-        height: 280px !important;
-    & .heroSlideBox {
-        & .heroSlide {
-            // background-size: cover;
-            & .Offer {
-                font-size: 16px;
+        height: 330px !important;
+        margin-bottom: 220px;
+        & .heroSlideBox {
+            & .heroSlide {
+                // background-size: cover;
+                & .Offer {
+                    font-size: 16px;
+                }
+                & .mainHead {
+                    font-size: 32px;
+                }
+                & .subHead {
+                    font-size: 16px;
+                }
+                & .shopBtn {
+                    font-size: 13px;
+                    padding: 7px 14px
+                }
             }
-            & .mainHead {
-                font-size: 32px;
+        }
+        & .heroCtaButtonSection {
+            & .ctaBox {
+                padding: 0;
+                & .ctaheading {
+                    font-size: 28px;
+                }
+                & .ctaSubheading {
+                }
+                & .btaBtn {
+                    &:hover {
+                    }
+                }
             }
-            & .subHead {
-                font-size: 16px;
+        }
+        & .rightSide {
+            height: auto !important;
+            position: unset !important;
+            margin-top: -40px;
+            & .needHelpHeading {
             }
-            & .shopBtn {
-                font-size: 13px;
-                padding: 7px 14px
+            & .inpOuter {
+                & .form-control {
+                    &::placeholder {
+                    }
+                }
+                & textarea {
+                    height: 45px;
+                    &:focus {
+                    }
+                    &::placeholder {
+                    }
+                }
+            }
+            & .getCallBtn {
+                &:hover {
+                }
             }
         }
     }
-}
 };
 @mixin heroSection-mixin-max-sm(){
     .heroSection {
-        height: 270px !important;
-    & .heroSlideBox {
-        & .heroSlide {
-            & .Offer {
-                font-size: 15px;
+        margin-bottom: 330px;
+        height: 300px !important;
+        & .heroSlideBox {
+            & .heroSlide {
+                & .Offer {
+                    font-size: 15px;
+                }
+                & .mainHead {
+                    font-size: 26px;
+                }
+                & .subHead {
+                    font-size: 15px;
+                }
+                & .shopBtn {
+                    font-size: 13px;
+                    padding: 7px 14px
+                }
             }
-            & .mainHead {
-                font-size: 26px;
+        }
+        & .heroCtaButtonSection {
+            & .ctaBox {
+                & .ctaheading {
+                    font-size: 22px;
+                }
+                & .ctaSubheading {
+                    font-size: 17px;
+                }
+                & .btaBtn {
+                    &:hover {
+                    }
+                }
             }
-            & .subHead {
-                font-size: 15px;
+        }
+        & .rightSide {
+            height: auto !important;
+            position: unset !important;
+            margin-top: -40px;
+            & .needHelpHeading {
             }
-            & .shopBtn {
-                font-size: 13px;
-                padding: 7px 14px
+            & .inpOuter {
+                & .form-control {
+                    &::placeholder {
+                    }
+                }
+                & textarea {
+                    height: 45px;
+                    &:focus {
+                    }
+                    &::placeholder {
+                    }
+                }
+            }
+            & .getCallBtn {
+                &:hover {
+                }
             }
         }
     }
-}
 };
 @mixin heroSection-mixin-max-xs(){
     .heroSection {
-        height: 200px !important;
+        height: 210px !important;
+        margin-bottom: 280px;
     & .heroSlideBox {
         & .heroSlide {
-            background-size: 100% 100%;
+            // background-size: 100% 100%;
             & .heroProImg {
                 width: auto !important;
                 max-height: 100% !important;
@@ -257,6 +430,49 @@
             & .shopBtn {
                 font-size: 10px;
                 padding: 5px 10px;
+            }
+        }
+    }
+    & .heroCtaButtonSection {
+        background: linear-gradient(273deg, rgba(255, 255, 255, 0) 35%, rgb(20, 70, 123) 100%);
+        & .ctaBox {
+            & .ctaheading {
+                font-size: 18px;
+            }
+            & .ctaSubheading {
+                font-size: 15px;
+            }
+            & .btaBtn {
+                font-size: 14px;
+                padding: 6px 16px;
+                &:hover {
+                }
+            }
+        }
+    }
+    & .rightSide {
+        margin-top: -20px;
+        & .needHelpHeading {
+            font-size: 17px;
+            line-height: 24px;
+        }
+        & .inpOuter {
+            & .form-control {
+                height: 40px;
+                &::placeholder {
+                }
+            }
+            & textarea {
+                height: 40px;
+                &:focus {
+                }
+                &::placeholder {
+                }
+            }
+        }
+        & .getCallBtn {
+            font-size: 14px;
+            &:hover {
             }
         }
     }
@@ -362,12 +578,24 @@
 .bookHomeSection {
     & .leftSide {
         background-color: $gray-100;
-        padding: 10px;
+        padding: 0px;
         & .sectionHeading {
-            font-size: 24px;
-            font-weight: 400;
+            font-size: 28px;
+            font-weight: 500;
             line-height: 30px;
             text-align: center;
+            color: $black;
+        }
+        & .cardOuter {
+            & .col {
+                &:last-child {
+                    & .card {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
         & .card {
             border: none;
@@ -376,18 +604,42 @@
             justify-content: center;
             flex-direction: column;
             gap: 5px;
+            transition: all 0.3s ease-in-out;
+            height: 180px;
+            position: relative;
+            padding: 20px 10px;
+            cursor: pointer;
             & .bookHomeImage {
                 width: 70px;
                 height: 70px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition: all 0.3s ease-in-out;
+                max-width: 200px;
             }
             & .bookHomeSubHeading {
-                font-size: 14px;
-                margin: 15px 0 10px;
+                font-size: 20px;
+                margin: 15px 0 0px;
                 line-height: 20px;
                 color: $black;
+                flex: 1 1 auto;
+                max-width: 220px;
+            }
+            &:hover {
+                box-shadow: 0 0.5rem 1rem rgba(33,37,41,.10);
+               & .bookHomeImage {
+                transform: rotateY(180deg);
+               } 
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -9px;
+                width: 1px;
+                height: 100%;
+                background-color: $theme1;
             }
         }
         & .bookNowBtn {
@@ -395,9 +647,9 @@
             border-radius: 5px;
             background-color: $theme1;
             color: $white;
-            text-transform: uppercase;
+            text-transform: capitalize;
             letter-spacing: 1px;
-            padding: 8px 18px;
+            padding: 8px 26px;
             font-weight: 700;
             font-size: 15px;
             transition: all 0.3s ease-in-out;
@@ -482,11 +734,14 @@
             & .sectionHeading {
             }
             & .card {
+                height: 150px;
+                padding: 20px 1px;
                 & .bookHomeImage {
                     width: 60px;
                     height: 60px;
                 }
                 & .bookHomeSubHeading {
+                    font-size: 16px;
                 }
             }
             & .bookNowBtn {
@@ -532,6 +787,7 @@
                     height: 50px;
                 }
                 & .bookHomeSubHeading {
+                    font-size: 15px;
                 }
             }
             & .bookNowBtn {
@@ -571,13 +827,36 @@
             & .sectionHeading {
                 font-size: 20px;
             }
+            & .cardOuter {
+                & .col {
+                    &:nth-last-of-type(odd) {
+                        & .card {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        & .card {
+                            &::after {
+                            }
+                        }
+                    }
+                }
+            }
             & .card {
+                height: 130px;
                 & .bookHomeImage {
                     width: 40px;
                     height: 40px;
+                    transform: none !important;
                 }
                 & .bookHomeSubHeading {
                     font-size: 13px;
+                    max-width: 150px;
+                }
+                &:hover {
+                    box-shadow: none;
                 }
             }
             & .bookNowBtn {
