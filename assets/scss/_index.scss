@@ -913,22 +913,35 @@
     & .featureSwiper {
         & .featureSlideBox {
             & .featureSlide {
-                padding-top: 20px;
+                // padding-top: 20px;
                 & .card {
                     height: 100%;
-                    border: 1px solid $gray-100;
-                    border-top: 4px solid $theme1;
+                    // border: 1px solid $gray-100;
+                    // border-top: 4px solid $theme1;
                     transition: all 0.3s ease-in-out;
+                    border-radius: 0;
+                    border: none;
+                    // border-left: 4px solid $theme1;
+                    // background-image: url('../img/pattern-4.png');
+                    // background-repeat: no-repeat;
+                    // background-position: center;
+                    // background-size: cover;
+                    position: relative;
                     & .card-body {
                         display: flex;
                         flex-direction: column;
+                        z-index: 1;
                         & .imgOuter {
                             margin: auto;
-                            width: 95px;
-                            height: 95px;
+                            width: 80px;
+                            height: 80px;
                             display: flex;
                             align-items: center;
                             margin-bottom: 15px !important;
+                            transition: all 0.5s ease-in-out;
+                            & img {
+                                // transition: all 0.1s ease-in-out;
+                            }
                         }
                         & .cardHeading {
                             font-size: 18px;
@@ -976,7 +989,7 @@
                             border-radius: 5px;
                             padding: 8px 16px;
                             transition:  all 0.3s ease-in-out;
-                            box-shadow: 5px 5px 5px #979797c4;
+                            box-shadow: 3px 3px 5px #979797c4;
 
                             &:hover {
                                 background-color: lighten($theme1,5);
@@ -984,7 +997,59 @@
                         }
                     }
                     &:hover {
-                        transform: translateY(-10px);
+                       & .card-body {
+                            // filter: brightness(50);
+                            & .imgOuter {
+                                // transform: rotateY(360deg);
+                                transform: scale(0.9);
+                                & img {
+                                    filter: brightness(100);
+                                }
+                            }
+                            & .cardHeading {
+                                filter: brightness(100);
+                            }
+                            & .cardSubHeadings {
+                                & ul {
+                                    filter: brightness(10);
+                                    & li {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                            & .readMoreBtn {
+                                color: $theme1;
+                                box-shadow: none;
+                                background-color: $white;
+                            }
+                       }
+                       &::before {
+                        width: 100%;
+                       }
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background-image: url('../img/pattern-4.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        z-index: 0;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 2px;
+                        background-color: $theme1;
+                        z-index: 0;
+                        transition: all 0.3s ease-in-out;
                     }
                 }
             }
@@ -1048,7 +1113,7 @@
         & .featureSwiper {
             & .featureSlideBox {
                 & .featureSlide {
-                    padding-top: 20px;
+                    // padding-top: 20px;
                     & .card {
                         & .card-body {
                             & .imgOuter {
@@ -1131,6 +1196,117 @@
 
 //Featured sectioin code end here
 
+//CTA Button sectioin code start here
+//Privercy and Policy sectioin code start here
+.textSection {
+    & .textMainHeading {
+        font-size: 26px;
+    }
+    & .textMainHeading2 {
+        font-size: 24px;
+    }
+    & .textSubHeading {
+        font-size: 16px;
+        font-weight: 600;
+        & img {
+            height: 13px;
+        }
+    }
+    & .text {
+        font-size: 16px;
+        & img {
+            height: 13px;
+        }
+    }
+}
+.ctaFluid {
+    & .ctaBox {
+        background: url('../img/pattern-4.png') $theme1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        & .mainHeading {
+            font-size: 32px;
+            font-weight: 600;
+        }
+        & .ctaAnchor {
+            display: inline-flex;
+            width: fit-content;
+            border-radius: 5px;
+            padding: 8px 16px;
+            background-color: $theme1;
+            color: $white;
+            text-decoration: none !important;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                background-color: darken($theme1, 5);
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .textSection {
+        & .textMainHeading {
+            font-size: 24px;
+        }
+        & .textMainHeading2 {
+            font-size: 22px;
+        }
+        & .textSubHeading {
+            font-size: 15px;
+            & img {
+            }
+        }
+        & .text {
+            font-size: 15px;
+            & img {
+            }
+        }
+    }
+    .ctaFluid {
+        & .ctaBox {
+            & .mainHeading {
+                font-size: 28px;
+            }
+            & .ctaAnchor {
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .textSection {
+        & .textMainHeading {
+            font-size: 22px;
+        }
+        & .textMainHeading2 {
+            font-size: 20px;
+        }
+        & .textSubHeading {
+            font-size: 14px;
+            & img {
+            }
+        }
+        & .text {
+            font-size: 14px;
+            & img {
+            }
+        }
+    }
+    .ctaFluid {
+        & .ctaBox {
+            & .mainHeading {
+                font-size: 24px;
+            }
+            & .ctaAnchor {
+                font-size: 14px;
+            }
+        }
+    }
+}
+//CTA Button sectioin code end here
+//Privercy and Policy sectioin code end here
 
 //Why Choose Us code start here
 .whyChooseUsSection {
@@ -1171,14 +1347,37 @@
 
 @mixin why-choose-section-mixin-max-xl(){}
 @mixin why-choose-section-mixin-max-lg(){}
-@mixin why-choose-section-mixin-max-md(){}
+@mixin why-choose-section-mixin-max-md(){
+    .whyChooseUsSection {
+        & .sectionHeading {
+            font-size: 22px;
+        }
+        & .cardOuter {
+            & .card {
+                & .card-body {
+                    & .cardImg {
+                    }
+                    & .card-text {
+                    }
+                }
+                &:hover {
+                }
+            }
+        }
+    }
+}
 @mixin why-choose-section-mixin-max-sm(){
     .whyChooseUsSection {
         & .sectionHeading {
-            text-align: center;
-            color: $black;
-            font-weight: bold;
-            font-size: 28px;
+            font-size: 20px;
+        }
+        & .cardOuter {
+            flex-wrap: nowrap;
+            overflow: auto hidden;
+            justify-content: start !important;
+            & .col {
+                width: 40%;
+            }
         }
         & .cardOuter {
             & .card {
@@ -1197,7 +1396,30 @@
         }
     }
 }
-@mixin why-choose-section-mixin-max-xs(){}
+@mixin why-choose-section-mixin-max-xs(){
+    .whyChooseUsSection {
+        & .sectionHeading {
+        }
+        & .cardOuter {
+            & .col {
+                width: 45%;
+            }
+        }
+        & .cardOuter {
+            & .card {
+                & .card-body {
+                    padding: 10px 6px;
+                    & .cardImg {
+                    }
+                    & .card-text {
+                    }
+                }
+                &:hover {
+                }
+            }
+        }
+    }
+}
 //Why Choose Us code end here
 
 
