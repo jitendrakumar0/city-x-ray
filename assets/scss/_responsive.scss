@@ -11,6 +11,7 @@
   @include productDetailPage-mixin-min-sm();
   @include homeProductCategoryFluid-mixin-min-sm();
   @include latestNews-mixin-min-sm();
+  @include testimonial-mixin-min-sm();
   // @include heroSection-mixin-min-sm();
   // @include heroSection-mixin-min-sm();
   // @include heroSection-mixin-min-sm();
@@ -32,6 +33,7 @@
   @include productDetailPage-mixin-min-md();
   @include homeProductCategoryFluid-mixin-min-md();
   @include latestNews-mixin-min-md();
+  @include testimonial-mixin-min-md();
   // @include heroSection-mixin-min-md();
   // @include heroSection-mixin-min-md();
   // @include heroSection-mixin-min-md();
@@ -52,6 +54,7 @@
   @include productDetailPage-mixin-min-lg();
   @include homeProductCategoryFluid-mixin-min-lg();
   @include latestNews-mixin-min-lg();
+  @include testimonial-mixin-min-lg();
   // @include heroSection-mixin-min-lg();
   // @include heroSection-mixin-min-lg();
   // @include heroSection-mixin-min-lg();
@@ -72,6 +75,7 @@
   @include productDetailPage-mixin-min-xl();
   @include homeProductCategoryFluid-mixin-min-xl();
   @include latestNews-mixin-min-xl();
+  @include testimonial-mixin-min-xl();
   // @include heroSection-mixin-min-xl();
   // @include heroSection-mixin-min-xl();
   // @include heroSection-mixin-min-xl();
@@ -92,6 +96,7 @@
   @include productDetailPage-mixin-min-xxl();
   @include homeProductCategoryFluid-mixin-min-xxl();
   @include latestNews-mixin-min-xxl();
+  @include testimonial-mixin-min-xxl();
   // @include heroSection-mixin-min-xxl();
   // @include heroSection-mixin-min-xxl();
   // @include heroSection-mixin-min-xxl();
@@ -116,6 +121,7 @@
   @include book-home-mixin-max-xl();
   @include featured-section-mixin-max-xl();
   @include why-choose-section-mixin-max-xl();
+  @include testimonial-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
@@ -136,6 +142,7 @@
   @include productDetailPage-mixin-max-1300();
   @include homeProductCategoryFluid-mixin-max-1300();
   @include latestNews-mixin-max-1300();
+  @include testimonial-mixin-max-1300();
   // @include heroSection-mixin-max-1300();
   // @include heroSection-mixin-max-1300();
   // @include heroSection-mixin-max-1300();
@@ -160,6 +167,7 @@
   @include book-home-mixin-max-lg();
   @include featured-section-mixin-max-lg();
   @include why-choose-section-mixin-max-lg();
+  @include testimonial-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
@@ -184,6 +192,7 @@
   @include book-home-mixin-max-md();
   @include featured-section-mixin-max-md();
   @include why-choose-section-mixin-max-md();
+  @include testimonial-mixin-max-md();
   // @include heroSection-mixin-max-md();
   // @include heroSection-mixin-max-md();
   // @include heroSection-mixin-max-md();
@@ -211,6 +220,7 @@
   @include book-home-mixin-max-sm();
   @include featured-section-mixin-max-sm();
   @include why-choose-section-mixin-max-sm();
+  @include testimonial-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
@@ -237,6 +247,7 @@
   @include book-home-mixin-max-xs();
   @include featured-section-mixin-max-xs();
   @include why-choose-section-mixin-max-xs();
+  @include testimonial-mixin-max-xs();
   // @include heroSection-mixin-max-xs();
   // @include heroSection-mixin-max-xs();
   // @include heroSection-mixin-max-xs();
